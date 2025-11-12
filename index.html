@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pool Live Plus - Login</title>
+ 
+  <style>
+      /* شاشة تحذير تدوير الشاشة */
+  #wrongRotation {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.95);
+    z-index: 2000;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    user-select: none;
+  }
+  #wrongRotation.visible {
+    display: flex;
+  }
+  #wrongRotation img {
+    width: 30%;
+    max-width: 180px;
+    margin-bottom: 20px;
+  }
+  #wrongRotation h1 {
+    font-size: 2em;
+  }
+    .mrdoobs-stats {
+    top: 0px !important;
+    left: 0px !important;
+    left: auto !important;
+    bottom: auto !important;
+}
+ html, body {
+    margin: 0; padding: 0; height: 100%;
+    font-family: Tahoma, Arial, sans-serif;
+    overflow: hidden;
+                  /* prevent copy paste, to allow, change 'none' to 'text' */
+  }
+    :root{
+      --bg:#040404;
+      --muted:#bdbdbd;
+      --fb:#1877f2;
+      --white:#ffffff;
+      --card-radius:12px;
+      --max-width:980px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background:var(--bg);
+      color:var(--white);
+      display:flex;align-items:center;justify-content:center;
+      padding:0px;
+      
+        background-image: url('poolliveplus/assets/BG.png');
+    xbackground-position: center;
+    background-repeat: no-repeat;
+					
+					-webkit-touch-callout: none !important;                /* prevent callout to copy image, etc when tap to hold */
+					-webkit-text-size-adjust: none !important;             /* prevent webkit from resizing text to fit */
+					-webkit-user-select: none !important;    
+    }
+
+    .stage{
+          xmargin-top: -60px;
+
+      width:100%;xmax-width:var(--max-width);xmin-height:520px;display:grid;xgrid-template-columns:1fr 460px;xgap:40px;align-items:center;
+      xposition:relative;
+    }
+
+    /* left visual (big character and chips) */
+    .visual{
+      position:relative;height:520px;overflow:hidden;border-radius:16px;display:flex;align-items:center;justify-content:center;
+    }
+    .visual::before{
+      content:'';position:absolute;inset:0;background:linear-gradient(90deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.85) 60%);pointer-events:none;
+    }
+    .visual img{position:relative;max-width:100%;height:auto;display:block;filter:grayscale(1) brightness(.9);}
+
+    /* right column */
+    .panel{display:flex;flex-direction:column;align-items:center;gap:22px;padding:24px 12px}
+
+    .logo{
+      display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:-80px;
+    }
+    .logo>img{
+      width: 260px;
+    }
+    .logo .word{font-size:86px;font-weight:700;color:#ff3848;text-shadow:0 4px 0 rgba(0,0,0,.4);letter-spacing:2px}
+    .logo .tag{font-family:'Pacifico';color:#e8ffec;font-size:28px;margin-top:-6px;text-shadow:0 2px 0 rgba(0,0,0,.5)}
+
+    .auth-card{width:100%;max-width:420px;display:flex;flex-direction:column;gap:14px;align-items:stretch}
+    .btn{
+      display:inline-flex;align-items:center;gap:12px;padding:14px 18px;border-radius:10px;border:0;font-size:16px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.35);
+    }
+    .btn .ico{width:20px;height:20px;display:inline-block}
+
+    .btn-fb{background:var(--fb);color:var(--white)}
+    .btn-google{background:var(--white);color:#111;border:1px solid rgba(0,0,0,.06)}
+
+    .hint{color:var(--muted);font-size:18px;text-align:center;margin-top:8px}
+
+    .footer{position:absolute;left:0;right:0;bottom:14px;text-align:center;color:var(--muted);font-size:14px}
+    .socials{display:flex;gap:14px;justify-content:center;align-items:center;margin-top:8px;opacity:.9;font-size: 34px;}
+
+    /* responsive */
+    @media (max-width:980px){
+      .stage{grid-template-columns:1fr;gap:18px}
+      .visual{height:360px}
+      .logo .word{font-size:56px}
+    }
+     @media (max-height:500px){
+       
+      .logo>img{
+      width: 130px;
+    }
+    }
+ 
+    /* small decorative line */
+    .copyright{font-size: 23px;}
+
+  </style>
+</head>
+<body>
+  <div class="font_preload" style="opacity: 0">
+			  <span style="font-family: 'Tahoma', Arial, sans-serif;"></span>
+			  </div>
+        <div id="swagWrapper" style='display:none;'></div>
+        <div id="wrongRotation">
+  <img src="poolliveplus/assets/picture.png" alt="Rotate Screen" />
+  <h1 id="rotateMessage">يرجى تدوير الشاشة</h1>
+</div>
+  <!--
+    To use: put your images in the same folder and update the src attributes below:
+      - left-image: replace "left-visual.png" with your big 8-ball image
+      - logo: replace "logo.png" if you have a prepared logo. If not, the text fallback will be used.
+  -->
+<div id="loginGameX"style="
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+        background-image: url('poolliveplus/assets/Login Page Background.png');
+    xbackground-position: center;
+    background-repeat: no-repeat;
+">
+<main id="Cban" style="display: none;" class="stage" dir="ltr">
+
+   
+
+    <aside class="panel">
+      <div class="logo" aria-hidden="" style="
+    margin-top: 0;
+">
+      
+<div class="word" style="
+    font-size: 54px;
+    font-weight: bold;
+">Pool Live Plus</div><div class="tag" style="
+    font-size: 54px;
+    font-weight: bold;
+    text-align: center;
+">Oops, you're banned...</div> <img src="poolliveplus/assets/picBan.png">
+      </div>
+
+      
+
+      <div class="hint">It Seems You Just Logged In Please Wait 10 Seconds ...</div>
+
+      <div style="flex:1"></div>
+
+      
+
+    </aside>
+
+  </main>
+  <main id="Clogin" class="stage" dir="ltr">
+
+   
+
+    <aside class="panel">
+      <div class="logo" aria-hidden>
+       <img src="poolliveplus/assets/Group 2.png"  >
+      </div>
+
+      <div class="auth-card" role="form" aria-label="login options">
+        <button class="btn btn-fb" onclick="onFb()">
+          <span class="ico" aria-hidden>
+            <!-- simple Facebook 'f' icon (SVG) -->
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden>
+              <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.1 5.66 21.2 10.44 21.9v-6.39H8.08v-2.85h2.36V10.4c0-2.33 1.38-3.62 3.5-3.62.99 0 2.03.18 2.03.18v2.23h-1.14c-1.13 0-1.48.7-1.48 1.42v1.7h2.51l-.4 2.85h-2.11v6.39C18.34 21.2 22 17.1 22 12.07z"/>
+            </svg>
+          </span>
+          Continue with Facebook
+        </button>
+
+        <button class="btn btn-google login-with-google-btn" xonclick="onGoogle()">
+          <span class="ico" aria-hidden>
+            <!-- Google G icon SVG -->
+            <svg viewBox="0 0 48 48" width="20" height="20" aria-hidden>
+              <path fill="#EA4335" d="M24 11.5v8.5h12.9C35.7 21.1 30.4 16 24 11.5z"></path>
+              <path fill="#34A853" d="M12.5 22.4C13 19.9 14.8 17.8 17.2 16.9v9.6H12.5z"></path>
+              <path fill="#4A90E2" d="M24 36.5c4.2 0 7.7-1.4 10.3-3.8l-5-4.1C28.4 30.9 26.4 31.7 24 31.7c-5.6 0-10.2-3.9-11.8-9.1l-4.9 3.8C10.5 33.9 16.7 36.5 24 36.5z"></path>
+              <path fill="#FBBC05" d="M36.3 12.4L31.9 16.1C29.9 14 27.2 12.8 24 12.8c-3.1 0-6 1-8.4 2.8l4.9 3.8C22 18.9 23.9 18 24 18c1.8 0 3.5.6 4.9 1.7l6-7.3z"></path>
+            </svg>
+          </span>
+          Continue with Google
+        </button>
+
+      </div>
+
+      <div class="hint">It Seems You Just Logged In Please Wait 10 Seconds ...</div>
+
+      <div style="flex:1"></div>
+
+      <div class="footer" aria-hidden>
+        <div class="copyright">© 2025 Pool Live Plus | All Rights Reserved</div>
+        <div class="socials">
+          <!-- replace with your social link icons if you have images -->
+          <span style="opacity:.85">f</span>
+          <span style="opacity:.85">◎</span>
+          <span style="opacity:.85">X</span>
+          <span style="opacity:.85">▶</span>
+        </div>
+      </div>
+
+    </aside>
+
+  </main>
+</div>
+  <script>
+
+
+ let bgY = 0; // موضع الخلفية الرأسي
+
+window.addEventListener("wheel", (e) => {
+  // e.deltaY موجبة = سكرول لتحت، سالبة = لفوق
+  bgY -= e.deltaY * 0.3; // سرعة الحركة (غيّر 0.3 حسب ما تحب)
+  
+  // ممكن تحدد حدود الحركة عشان الصورة ما تخرجش تمامًا
+if(bgY>=0){
+  bgY=0
+}else if(bgY<=-300){
+bgY=-300
+}
+  
+  document.body.style.backgroundPosition = `center ${bgY}px`;
+});
+var chs=145
+  var dxas= ""
+
+	 function xhrloopOne2(file,onload=function(){},hide=false,cache=!true){
+         let xhr = new XMLHttpRequest()
+         xhr.onload = function (data) {
+         
+        
+             var script=   document.createElement("script")
+         
+        
+             dxas+=hide?`(function(){${data.target.responseText}}())` :data.target.responseText
+             script.textContent =dxas//+" "
+              document.body.appendChild(script);
+           dxas=""
+            delete dxas;
+           script.remove()
+           onload()
+         }
+      
+        if(cache!==true)  {
+         
+          xhr.open('GET', "poolliveplus"+"/"+file+".js?cache="+Date.now(), true);
+          xhr.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");
+          xhr.setRequestHeader("tcz", Date.now());
+          
+        }else{
+          xhr.open('GET', "poolliveplus"+"/"+file+".js?cache="+chs, true);
+          xhr.setRequestHeader("tcz", Date.now());
+        }
+ 
+         xhr.send();
+     }
+      function xhrloopURLOne(file,onload=function(){},hide=false,cache=true){
+         let xhr = new XMLHttpRequest()
+         xhr.onload = function (data) {
+             var script=   document.createElement("script")
+             dxas +=hide?`(function(){${data.target.responseText}}())` :data.target.responseText
+           dxas +="\n "
+           // document.body.appendChild(script);
+         //  script.remove()
+           onload()
+         }
+         if(cache!==true)  {
+         
+          xhr.open('GET', "poolliveplus/"+file+"/?cache="+Date.now(), true);
+          xhr.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");
+           xhr.setRequestHeader("tcz", Date.now());
+        }else{
+          xhr.open('GET', "poolliveplus/"+file+"?cache="+chs, true);
+          xhr.setRequestHeader("tcz", Date.now());
+        }
+ 
+ 
+         xhr.send();
+     }
+xhrloopOne2("cdn",function(){},true,false)
+
+    // simple JS placeholders for buttons
+  
+  </script>
+</body>
+</html>
