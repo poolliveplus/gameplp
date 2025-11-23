@@ -12,11 +12,6 @@
                 "key": "compny"
             },
             {
-                "url": "assets/guapen.png",
-                "type": "image",
-                "key": "guapen"
-            },
-            {
                 "url": "assets/Live Plus.png",
                 "type": "image",
                 "key": "Live Plus"
@@ -41,12 +36,6 @@
                 "textureURL": "assets/pak_anim_loading.png",
                 "type": "atlas",
                 "key": "pak_anim_loading"
-            },
-            {
-                "atlasURL": "assets/pak_progress_loading.json",
-                "textureURL": "assets/pak_progress_loading.png",
-                "type": "atlas",
-                "key": "pak_progress_loading"
             }
         ]
     },

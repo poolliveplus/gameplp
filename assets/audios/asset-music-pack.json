@@ -1,0 +1,378 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": [
+                    "assets/audios/added points snooker.mp3"
+                ],
+                "type": "audio",
+                "key": "added points snooker"
+            },
+            {
+                "url": [
+                    "assets/audios/ballHit.mp3"
+                ],
+                "type": "audio",
+                "key": "ballHit"
+            },
+            {
+                "url": [
+                    "assets/audios/bubble_pop.mp3"
+                ],
+                "type": "audio",
+                "key": "bubble_pop"
+            },
+            {
+                "url": [
+                    "assets/audios/changePlayer.mp3"
+                ],
+                "type": "audio",
+                "key": "changePlayer"
+            },
+            {
+                "url": [
+                    "assets/audios/coinsAdded.mp3"
+                ],
+                "type": "audio",
+                "key": "coinsAdded"
+            },
+            {
+                "url": [
+                    "assets/audios/CoinsBet.mp3"
+                ],
+                "type": "audio",
+                "key": "CoinsBet"
+            },
+            {
+                "url": [
+                    "assets/audios/CuesWheel.mp3"
+                ],
+                "type": "audio",
+                "key": "CuesWheel"
+            },
+            {
+                "url": [
+                    "assets/audios/cushionHit.mp3"
+                ],
+                "type": "audio",
+                "key": "cushionHit"
+            },
+            {
+                "url": [
+                    "assets/audios/ejectingStacks.mp3"
+                ],
+                "type": "audio",
+                "key": "ejectingStacks"
+            },
+            {
+                "url": [
+                    "assets/audios/explosion.mp3"
+                ],
+                "type": "audio",
+                "key": "explosion"
+            },
+            {
+                "url": [
+                    "assets/audios/fireMax2.mp3"
+                ],
+                "type": "audio",
+                "key": "fireMax2"
+            },
+            {
+                "url": [
+                    "assets/audios/fireworks.mp3"
+                ],
+                "type": "audio",
+                "key": "fireworks"
+            },
+            {
+                "url": [
+                    "assets/audios/funny.mp3"
+                ],
+                "type": "audio",
+                "key": "funny"
+            },
+            {
+                "url": [
+                    "assets/audios/funny2.mp3"
+                ],
+                "type": "audio",
+                "key": "funny2"
+            },
+            {
+                "url": [
+                    "assets/audios/Game opening theme.mp3"
+                ],
+                "type": "audio",
+                "key": "Game opening theme"
+            },
+            {
+                "url": [
+                    "assets/audios/getType.mp3"
+                ],
+                "type": "audio",
+                "key": "getType"
+            },
+            {
+                "url": [
+                    "assets/audios/ghost-woo.mp3"
+                ],
+                "type": "audio",
+                "key": "ghost-woo"
+            },
+            {
+                "url": [
+                    "assets/audios/happy.mp3"
+                ],
+                "type": "audio",
+                "key": "happy"
+            },
+            {
+                "url": [
+                    "assets/audios/heart.mp3"
+                ],
+                "type": "audio",
+                "key": "heart"
+            },
+            {
+                "url": [
+                    "assets/audios/heartbeat.mp3"
+                ],
+                "type": "audio",
+                "key": "heartbeat"
+            },
+            {
+                "url": [
+                    "assets/audios/kiss.mp3"
+                ],
+                "type": "audio",
+                "key": "kiss"
+            },
+            {
+                "url": [
+                    "assets/audios/lucky_wheel_vyhra.mp3"
+                ],
+                "type": "audio",
+                "key": "lucky_wheel_vyhra"
+            },
+            {
+                "url": [
+                    "assets/audios/Mouse Highlight.mp3"
+                ],
+                "type": "audio",
+                "key": "Mouse Highlight"
+            },
+            {
+                "url": [
+                    "assets/audios/MouseClick.mp3"
+                ],
+                "type": "audio",
+                "key": "MouseClick"
+            },
+            {
+                "url": [
+                    "assets/audios/Music_chateauBilliard.mp3"
+                ],
+                "type": "audio",
+                "key": "Music_chateauBilliard"
+            },
+            {
+                "url": [
+                    "assets/audios/Music_manhattanSkyloft.mp3"
+                ],
+                "type": "audio",
+                "key": "Music_manhattanSkyloft"
+            },
+            {
+                "url": [
+                    "assets/audios/Music_moesPub.mp3"
+                ],
+                "type": "audio",
+                "key": "Music_moesPub"
+            },
+            {
+                "url": [
+                    "assets/audios/Music_nineBallPalace.mp3"
+                ],
+                "type": "audio",
+                "key": "Music_nineBallPalace"
+            },
+            {
+                "url": [
+                    "assets/audios/Music_rackAndRollBar.mp3"
+                ],
+                "type": "audio",
+                "key": "Music_rackAndRollBar"
+            },
+            {
+                "url": [
+                    "assets/audios/Music_royalSnookerClub.mp3"
+                ],
+                "type": "audio",
+                "key": "Music_royalSnookerClub"
+            },
+            {
+                "url": [
+                    "assets/audios/Music_slickWilliesPoolHall.mp3"
+                ],
+                "type": "audio",
+                "key": "Music_slickWilliesPoolHall"
+            },
+            {
+                "url": [
+                    "assets/audios/placingBall.mp3"
+                ],
+                "type": "audio",
+                "key": "placingBall"
+            },
+            {
+                "url": [
+                    "assets/audios/pocket fall snooker.mp3"
+                ],
+                "type": "audio",
+                "key": "pocket fall snooker"
+            },
+            {
+                "url": [
+                    "assets/audios/pocketFall.mp3"
+                ],
+                "type": "audio",
+                "key": "pocketFall"
+            },
+            {
+                "url": [
+                    "assets/audios/pocketHit.mp3"
+                ],
+                "type": "audio",
+                "key": "pocketHit"
+            },
+            {
+                "url": [
+                    "assets/audios/point.mp3"
+                ],
+                "type": "audio",
+                "key": "point"
+            },
+            {
+                "url": [
+                    "assets/audios/PoolSounds_SoundRack.mp3"
+                ],
+                "type": "audio",
+                "key": "PoolSounds_SoundRack"
+            },
+            {
+                "url": [
+                    "assets/audios/PoolSounds_SoundRunner.mp3"
+                ],
+                "type": "audio",
+                "key": "PoolSounds_SoundRunner"
+            },
+            {
+                "url": [
+                    "assets/audios/ranksound.ogg"
+                ],
+                "type": "audio",
+                "key": "ranksound"
+            },
+            {
+                "url": [
+                    "assets/audios/See you later Effect Audio.mp3"
+                ],
+                "type": "audio",
+                "key": "See you later Effect Audio"
+            },
+            {
+                "url": [
+                    "assets/audios/silent_1s.mp3"
+                ],
+                "type": "audio",
+                "key": "silent_1s"
+            },
+            {
+                "url": [
+                    "assets/audios/SoundTurnCountdownLong.mp3"
+                ],
+                "type": "audio",
+                "key": "SoundTurnCountdownLong"
+            },
+            {
+                "url": [
+                    "assets/audios/SoundTurnCountdownShort.mp3"
+                ],
+                "type": "audio",
+                "key": "SoundTurnCountdownShort"
+            },
+            {
+                "url": [
+                    "assets/audios/stackHit.mp3"
+                ],
+                "type": "audio",
+                "key": "stackHit"
+            },
+            {
+                "url": [
+                    "assets/audios/stackRoll.mp3"
+                ],
+                "type": "audio",
+                "key": "stackRoll"
+            },
+            {
+                "url": [
+                    "assets/audios/startGame.mp3"
+                ],
+                "type": "audio",
+                "key": "startGame"
+            },
+            {
+                "url": [
+                    "assets/audios/strike.mp3"
+                ],
+                "type": "audio",
+                "key": "strike"
+            },
+            {
+                "url": [
+                    "assets/audios/swooshIn.mp3"
+                ],
+                "type": "audio",
+                "key": "swooshIn"
+            },
+            {
+                "url": [
+                    "assets/audios/swooshOut.mp3"
+                ],
+                "type": "audio",
+                "key": "swooshOut"
+            },
+            {
+                "url": [
+                    "assets/audios/whooo.mp3"
+                ],
+                "type": "audio",
+                "key": "whooo"
+            },
+            {
+                "url": [
+                    "assets/audios/whoosh.mp3"
+                ],
+                "type": "audio",
+                "key": "whoosh"
+            },
+            {
+                "url": [
+                    "assets/audios/win.mp3"
+                ],
+                "type": "audio",
+                "key": "win"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false,
+        "visible": true
+    }
+}
