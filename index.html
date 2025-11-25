@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
   <title>Pool Live Plus - Login</title>
- 
+ <link rel="icon" type="image/png" href="poolliveplus/assets/picture.png" sizes="512x512">
+		<link rel="apple-touch-icon" href="poolliveplus/assets/picture.png">
   <style>
       /* شاشة تحذير تدوير الشاشة */
   #wrongRotation {
@@ -61,8 +62,10 @@
       display:flex;align-items:center;justify-content:center;
       padding:0px;
       
-        background-image: url('https://raw.githubusercontent.com/poolliveplus/gameplp/main/assets/BG.png');
+        background-image: url('poolliveplus/assets/BG.png');
     xbackground-position: center;
+          background-size: cover;
+
     background-repeat: no-repeat;
 					
 					-webkit-touch-callout: none !important;                /* prevent callout to copy image, etc when tap to hold */
@@ -136,7 +139,7 @@
 			  </div>
         <div id="swagWrapper" style='display:none;'></div>
         <div id="wrongRotation">
-  <img src="https://raw.githubusercontent.com/poolliveplus/gameplp/main/assets/picture.png" alt="Rotate Screen" />
+  <img src="poolliveplus/assets/picture.png" alt="Rotate Screen" />
   <h1 id="rotateMessage">يرجى تدوير الشاشة</h1>
 </div>
   <!--
@@ -144,15 +147,34 @@
       - left-image: replace "left-visual.png" with your big 8-ball image
       - logo: replace "logo.png" if you have a prepared logo. If not, the text fallback will be used.
   -->
-<div id="loginGameX"style="
+
+  <div id="loginGameX"style="
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-        background-image: url('https://raw.githubusercontent.com/poolliveplus/gameplp/main/assets/Login Page Background.png');
+     background-size: cover;
+        background-image: url('poolliveplus/assets/Login Page Background.png');
     xbackground-position: center;
     background-repeat: no-repeat;
 ">
+<main id="Wlogin" class="stage"     style="
+display: none;
+    height: 100%;
+">
+
+   
+
+    <aside class="panel" style="
+    padding-top: 70px;
+">
+      <div class="logo" aria-hidden="">
+       <img src="poolliveplus/assets/WarningSign.png">
+     <h3 style="
+    text-align: center;
+">Warning: The game is already open in another tab. Please close the other tab to continue</h3> </div>
+    </aside>
+    </main>
 <main id="Cban" style="display: none;" class="stage" dir="ltr">
 
    
@@ -169,7 +191,7 @@
     font-size: 54px;
     font-weight: bold;
     text-align: center;
-">Oops, you're banned...</div> <img src="https://raw.githubusercontent.com/poolliveplus/gameplp/main/assets/picBan.png">
+">Oops, you're banned...</div> <img src="poolliveplus/assets/picBan.png">
       </div>
 
       
@@ -189,7 +211,7 @@
 
     <aside class="panel">
       <div class="logo" aria-hidden>
-       <img src="https://raw.githubusercontent.com/poolliveplus/gameplp/main/assets/Group 2.png"  >
+       <img src="poolliveplus/assets/Group 2.png"  >
       </div>
 
       <div class="auth-card" role="form" aria-label="login options">
@@ -281,14 +303,17 @@ function xhrloopOne2(file, onload = function () {}, hide = false, cache = false)
 
 // تحميل الملفين بالتتابع ثم تنفيذهم مرة واحدة
 xhrloopOne2("cdn", function () {
-  var script = document.createElement("script");
-    script.textContent = `(function(){${dxas}}())\n`;
+  xhrloopOne2("cdn2", function () {
+    // بعد تحميل الملفين
+    var script = document.createElement("script");
+    script.textContent = dxas;
     document.body.appendChild(script);
 
     // تنظيف بعد التنفيذ
     dxas = "";
     script.remove();
-}, true, true);
+  }, true, true);
+}, true, false);
 
     // simple JS placeholders for buttons
   
