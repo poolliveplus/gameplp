@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
   <title>Pool Live Plus - Login</title>
- <link rel="icon" type="image/png" href="poolliveplus/assets/picture.png" sizes="512x512">
-		<link rel="apple-touch-icon" href="poolliveplus/assets/picture.png">
+ <link rel="icon" type="image/png" href="assets/picture.png" sizes="512x512">
+		<link rel="apple-touch-icon" href="assets/picture.png">
   <style>
       /* شاشة تحذير تدوير الشاشة */
   #wrongRotation {
@@ -62,7 +62,7 @@
       display:flex;align-items:center;justify-content:center;
       padding:0px;
       
-        background-image: url('poolliveplus/assets/BG.png');
+        background-image: url('assets/BG.png');
     xbackground-position: center;
           background-size: cover;
 
@@ -139,7 +139,7 @@
 			  </div>
         <div id="swagWrapper" style='display:none;'></div>
         <div id="wrongRotation">
-  <img src="poolliveplus/assets/picture.png" alt="Rotate Screen" />
+  <img src="assets/picture.png" alt="Rotate Screen" />
   <h1 id="rotateMessage">يرجى تدوير الشاشة</h1>
 </div>
   <!--
@@ -154,7 +154,7 @@
     display: flex;
     justify-content: center;
      background-size: cover;
-        background-image: url('poolliveplus/assets/Login Page Background.png');
+        background-image: url('assets/Login Page Background.png');
     xbackground-position: center;
     background-repeat: no-repeat;
 ">
@@ -169,7 +169,7 @@ display: none;
     padding-top: 70px;
 ">
       <div class="logo" aria-hidden="">
-       <img src="poolliveplus/assets/WarningSign.png">
+       <img src="assets/WarningSign.png">
      <h3 style="
     text-align: center;
 ">Warning: The game is already open in another tab. Please close the other tab to continue</h3> </div>
@@ -191,7 +191,7 @@ display: none;
     font-size: 54px;
     font-weight: bold;
     text-align: center;
-">Oops, you're banned...</div> <img src="poolliveplus/assets/picBan.png">
+">Oops, you're banned...</div> <img src="assets/picBan.png">
       </div>
 
       
@@ -211,7 +211,7 @@ display: none;
 
     <aside class="panel">
       <div class="logo" aria-hidden>
-       <img src="poolliveplus/assets/Group 2.png"  >
+       <img src="assets/Group 2.png"  >
       </div>
 
       <div class="auth-card" role="form" aria-label="login options">
@@ -290,7 +290,7 @@ function xhrloopOne2(file, onload = function () {}, hide = false, cache = false)
   };
 
   let url =
-    "poolliveplus/" +
+    "" +
     file +
     ".js?cache=" +
     (cache ? chs : Date.now());
